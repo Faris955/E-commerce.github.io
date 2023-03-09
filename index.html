@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MirShop</title>
+  </head>
+  <body>
+    <nav class="flex flex-row p-5 justify-between px-20 shadow-lg">
+      <div class="text-3xl text-tosca font-bold">MirShop</div>
+      <div class="flex gap-10 font-medium items-center">
+        <a href="" class="text-hover">Home</a>
+        <a href="" class="text-hover">Shop</a>
+        <a href="" class="text-hover">Blog</a>
+        <a href="" class="text-hover">About</a>
+        <a href="" class="text-hover">Contact</a>
+        <i
+          onclick="Button()"
+          id="btn-Cart"
+          class="fa fa-cart-shopping text-2xl text-tosca hover:cursor-pointer"
+        ></i>
+      </div>
+    </nav>
+
+    <!-- BOX CART -->
+    <div
+      id="cartBox"
+      class="flex flex-col gap-3 p-5 justify-end float-right bg-white w-fit hover:cursor-pointer"
+    >
+      <button onclick="Close()" class="text-red-600 text-2xl text-right">
+        <i class="fa fa-close text-right"></i>
+      </button>
+      <!-- box -->
+      <div class="box flex gap-5 h-36 w-fit bg-white p-5 px-5 items-center">
+        <img
+          src="/assets/img/hoddie.png"
+          alt=""
+          class="object-cover h-[120px]"
+        />
+        <div class="text flex flex-col gap-3">
+          <span>Barang : Hoddie</span>
+          <span class="text-tosca">Harga : 200.000</span>
+          <button class="bg-red-500 text-white rounded-sm px-5">Cancel</button>
+        </div>
+      </div>
+      <div class="box flex gap-5 h-36 w-fit bg-white p-5 px-5 items-center">
+        <img
+          src="/assets/img/hoddie.png"
+          alt=""
+          class="object-cover h-[120px]"
+        />
+        <div class="text flex flex-col gap-3">
+          <span>Barang : Hoddie</span>
+          <span class="text-tosca">Harga : 200.000</span>
+          <button class="bg-red-500 text-white rounded-sm px-5">Cancel</button>
+        </div>
+      </div>
+      <!-- end box -->
+      <button
+        id=""
+        class="bg-emerald-600 w-fit text-white mx-auto px-10 rounded-sm"
+      >
+        Checkout Now
+      </button>
+    </div>
+    <!-- END CART BOX -->
+
+    <script src="/script.js"></script>
+  </body>
+</html>
